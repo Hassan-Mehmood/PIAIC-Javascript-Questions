@@ -7,11 +7,19 @@
 // • Show that your array is still in its original order by printing it again.
 // • Reverse the order of your list. Print the array to show that its order has changed.
 // • Reverse the order of your list again. Print the list to show it’s back to its original order.
+
 // • Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
 // • Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
 
-const places = ["Mecca", "Medina", "London", "Istanbul", "Barcelona"];
+const places = ["London", "Mecca", "Medina", "Istanbul", "Barcelona"];
 const alphabeticalPlaces = [...places].sort();
 console.log("Original", places);
 console.log("Alphabetical Order", alphabeticalPlaces);
 console.log("Original Array", places);
+const reversePlaces = [...alphabeticalPlaces].reverse();
+console.log("Reverese Array", reversePlaces);
+console.log("Original Array", places);
+console.log("Reverse Places", places.reverse());
+console.log("Reverse the Reversed Array", places.reverse());
+console.log("Alphabetical sorted", places.sort());
+console.log("Reverse Alphabetical sorted", places.reverse());
