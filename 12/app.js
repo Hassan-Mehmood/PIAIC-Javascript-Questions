@@ -1,7 +1,7 @@
-// Your Own Array: Think of your favorite mode of transportation, such as a motorcycle or a car, and make a list that stores several examples. Use your list to print a series of statements about these items, such as “I would like to own a Honda motorcycle.”
+//Greetings: Start with the array you used in Exercise 11, but instead of just printing each person’s name, print a message to them. The text of each message should be the same, but each message should be personalized with the person’s name.
 
-const cars = ["Honda Civic", "Honda City", "Sonata"];
+const names = ["Ahmed", "Hamza", "Shuja"];
 
-for (let i = 0; i < cars.length; i++) {
-  console.log(`I would like to own a ${cars[i]}`);
+for (let i = 0; i < names.length; i++) {
+  console.log(`Hello ${names[i]}`);
 }

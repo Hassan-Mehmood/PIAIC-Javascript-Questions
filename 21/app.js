@@ -1,8 +1,9 @@
-//Intentional Error: If you haven’t received an array index error in one of your programs yet, try to make one happen. Change an index in one of your programs to produce an index error. Make sure you correct the error before closing the program.
+//They think of something you could store in a JavaScript Object. Write a program that creates Objects containing these items.
 
-let fruits = ["apple", "oranges", "mango"];
-console.log(fruits[3]); // This will give undefined because there is no 4th element in array
+const person = {
+  name: "Hassan",
+  age: 19,
+  sex: "Male",
+};
 
-// To fix this we either have to add 4th element or we have to access the correct element
-fruits[3] = "strawberry";
-console.log(fruits[3]);
+console.log(person);

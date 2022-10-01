@@ -1,11 +1,10 @@
-// Number Eight: Write addition, subtraction, multiplication, and division operations that each result in the number 8. Be sure to enclose your operations in print statements to see the results.
+// Stripping Names: Store a person’s name, and include some whitespace characters at the beginning and end of the name. Make sure you use each character combination, "\t" and "\n", at least once. Print the name once, so the whitespace around the name is displayed. Then print the name after striping the white spaces.
 
-let add = 5 + 3;
-let subtract = 11 - 3;
-let divide = 16 / 2;
-let multiply = 2 * 4;
+// \t represents tab character, it will add tab to the string
+let name = "\tHassan Mehmood\t";
 
-console.log(`5 + 3 = ${add}`);
-console.log(`11 - 3 = ${subtract}`);
-console.log(`16 / 2 = ${divide}`);
-console.log(`2 * 4 = ${multiply}`);
+console.log(name);
+// \n will add new line to the console
+console.log("\n");
+console.log(name.trim());
+// trim() function delete all the white space in front and at the back of a sentence or word

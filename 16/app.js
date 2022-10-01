@@ -1,4 +1,13 @@
-let invites = ["Ahmed", "Hamza", "Shuja"];
+// More Guests: You just found a bigger dinner table, so now more space is available. Think of three more guests to invite to dinner.
+
+// • Start with your program from Exercise 15. Add a print statement to the end of your program informing people that you found a bigger dinner table.
+
+// • Add one new guest to the beginning of your array.
+
+// • Add one new guest to the middle of your array.
+// • Use append() to add one new guest to the end of your list. • Print a new set of invitation messages, one for each person in your list.
+
+const invites = ["Ahmed", "Hamza", "Shuja"];
 
 for (let i = 0; i < invites.length; i++) {
   console.log(`Hey ${invites[i]}, I would like to invite to dinner tonight`);
@@ -19,18 +28,3 @@ invites.push("rashid");
 for (let i = 0; i < invites.length; i++) {
   console.log(`Hey ${invites[i]}, I would like to invite to dinner tonight`);
 }
-
-console.log("Sorry we only have sapce for 2 people");
-
-let i = invites.length - 1;
-while (invites.length > 2) {
-  console.log(`${invites[i]} Sorry we cannot invite you to dinner`);
-  invites.pop();
-  i--;
-}
-console.log(
-  `${invites[0]} and ${invites[1]} You are still invited to the dinner`
-);
-invites = [];
-
-console.log(invites);

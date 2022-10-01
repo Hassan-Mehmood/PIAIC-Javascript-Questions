@@ -1,25 +1,36 @@
-// Seeing the World: Think of at least five places in the world you’d like to visit.
-// • Store the locations in a array. Make sure the array is not in alphabetical order.
-// • Print your array in its original order.
-// • Print your array in alphabetical order without modifying the actual list.
-// • Show that your array is still in its original order by printing it.
-// • Print your array in reverse alphabetical order without changing the order of the original list.
-// • Show that your array is still in its original order by printing it again.
-// • Reverse the order of your list. Print the array to show that its order has changed.
-// • Reverse the order of your list again. Print the list to show it’s back to its original order.
+let invites = ["Ahmed", "Hamza", "Shuja"];
 
-// • Sort your array so it’s stored in alphabetical order. Print the array to show that its order has been changed.
-// • Sort to change your array so it’s stored in reverse alphabetical order. Print the list to show that its order has changed.
+for (let i = 0; i < invites.length; i++) {
+  console.log(`Hey ${invites[i]}, I would like to invite to dinner tonight`);
+}
 
-const places = ["London", "Mecca", "Medina", "Istanbul", "Barcelona"];
-const alphabeticalPlaces = [...places].sort();
-console.log("Original", places);
-console.log("Alphabetical Order", alphabeticalPlaces);
-console.log("Original Array", places);
-const reversePlaces = [...alphabeticalPlaces].reverse();
-console.log("Reverese Array", reversePlaces);
-console.log("Original Array", places);
-console.log("Reverse Places", places.reverse());
-console.log("Reverse the Reversed Array", places.reverse());
-console.log("Alphabetical sorted", places.sort());
-console.log("Reverse Alphabetical sorted", places.reverse());
+console.log("Hamza can't make it to the dinner");
+invites[1] = "Haziq";
+
+for (let i = 0; i < invites.length; i++) {
+  console.log(`Hey ${invites[i]}, I would like to invite to dinner tonight`);
+}
+
+console.log("Hey i found a bigger table we can invite 3 more people");
+invites.unshift("Hassan");
+invites.splice(3, 0, "Waleed");
+invites.push("rashid");
+
+for (let i = 0; i < invites.length; i++) {
+  console.log(`Hey ${invites[i]}, I would like to invite to dinner tonight`);
+}
+
+console.log("Sorry we only have sapce for 2 people");
+
+let i = invites.length - 1;
+while (invites.length > 2) {
+  console.log(`${invites[i]} Sorry we cannot invite you to dinner`);
+  invites.pop();
+  i--;
+}
+console.log(
+  `${invites[0]} and ${invites[1]} You are still invited to the dinner`
+);
+invites = [];
+
+console.log(invites);

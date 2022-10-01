@@ -1,6 +1,6 @@
-// Favorite Number: Store your favorite number in a variable. Then, using that variable, create a message that reveals your favorite number. Print that message.
+// You should create four lines that look like this: console.log(5 + 3) Your output should simply be four lines with the number 8 appearing once on each line.
 
-const favorite_number = 6;
-const message = `My favourite number is ${favorite_number}`;
-
-console.log(message);
+// This loop will run 4 times and will print 8 because 5 + 3 = 8
+for (let i = 0; i < 4; i++) {
+  console.log(5 + 3);
+}

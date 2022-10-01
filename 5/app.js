@@ -1,10 +1,7 @@
-// Stripping Names: Store a person’s name, and include some whitespace characters at the beginning and end of the name. Make sure you use each character combination, "\t" and "\n", at least once. Print the name once, so the whitespace around the name is displayed. Then print the name after striping the white spaces.
+// Famous Quote 2: Repeat Exercise 4, but this time store the famous person’s name in a variable called famous_person. Then compose your message and store it in a new variable called message. Print your message.
 
-// \t represents tab character, it will add tab to the string
-let name = "\tHassan Mehmood\t";
+const famous_person = "Umar ibn Al Khattab";
 
-console.log(name);
-// \n will add new line to the console
-console.log("\n");
-console.log(name.trim());
-// trim() function delete all the white space in front and at the back of a sentence or word
+const message = `${famous_person} (R.A) once said, “Acquire knowledge, and learn tranquility and dignity.”`;
+
+console.log(message);

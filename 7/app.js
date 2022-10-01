@@ -1,6 +1,11 @@
-// You should create four lines that look like this: console.log(5 + 3) Your output should simply be four lines with the number 8 appearing once on each line.
+// Number Eight: Write addition, subtraction, multiplication, and division operations that each result in the number 8. Be sure to enclose your operations in print statements to see the results.
 
-// This loop will run 4 times and will print 8 because 5 + 3 = 8
-for (let i = 0; i < 4; i++) {
-  console.log(5 + 3);
-}
+let add = 5 + 3;
+let subtract = 11 - 3;
+let divide = 16 / 2;
+let multiply = 2 * 4;
+
+console.log(`5 + 3 = ${add}`);
+console.log(`11 - 3 = ${subtract}`);
+console.log(`16 / 2 = ${divide}`);
+console.log(`2 * 4 = ${multiply}`);

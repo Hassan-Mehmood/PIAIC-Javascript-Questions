@@ -1,7 +1,5 @@
-// Names: Store the names of a few of your friends in a array called names. Print each person’s name by accessing each element in the list, one at a time.
+// Adding Comments: Choose two of the programs you’ve written, and add at least one comment to each. If you don’t have anything specific to write because your programs are too simple at this point, just add your name and the current date at the top of each program file. Then write one sentence describing what the program does.
 
-const names = ["Ahmed", "Hamza", "Shuja"];
-
-for (let i = 0; i < names.length; i++) {
-  console.log(names[i]);
-}
+// Done
+// with problem 5 in my git repo
+// with problem 7 in my git repo
