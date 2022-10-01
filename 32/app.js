@@ -4,11 +4,11 @@
 // • Loop through the new_users list to see if each new username has already been used. If it has, print a message that the person will need to enter a new username. If a username has not been used, print a message saying that the username is available.
 // • Make sure your comparison is case insensitive. If 'John' has been used, 'JOHN' should not be accepted.
 
-const current_usernames = ["Admin", "Hassan", "Hamza", "ahmed", "waleed"];
+const current_usernames = ["admin", "hassan", "hamza", "ahmed", "waleed"];
 const new_users = ["hassan", "sajid", "rehan", "hamZa"];
 
 for (let i = 0; i < new_users.length; i++) {
-  if (current_usernames.includes(new_users[i]))
-    console.log("Usernaem not available", new_users[i]);
+  if (current_usernames.includes(new_users[i].toLowerCase()))
+    console.log("Username not available", new_users[i]);
   else console.log("Username available", new_users[i]);
 }
